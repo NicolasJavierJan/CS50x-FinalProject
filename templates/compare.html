@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}: Compare games{% endblock %}
+
+{%block main%}
+<div class="card-deck">
+    <div class="col">
+        <div class="card md-4 mt-5 mx-auto bg-dark text-white" style="width: 200px;">
+          <img src="/static/img/{{number1}}.jpg" class="card-img-top" id="gamecover" alt="Game Cover">
+          <div class="card-body">
+            <h5 class="card-title">{{title}}</h5>
+            <h6 class="card-text" text-align="left">{{year}}. {{console}}.</h6>
+          </div>
+        </div>
+    </div>
+    <form action="/compare/{{a}}/with/{{b}}" method="post" style="text-align: center;">
+        <div class="col mt-5 mx-auto">
+            <p>Are these games similar?</p>
+            <button type="submit" class="btn btn-outline-dark" name="choice" value="1">Yes</button>
+            <button type="submit" class="btn btn-outline-dark" name="choice" value="0">No</button>
+        </div>
+    </form>
+    <div class="col">
+        <div class="card md-4 mt-5 mx-auto bg-dark text-white" style="width: 200px;">
+          <img src="/static/img/{{number2}}.jpg" class="card-img-top" id="gamecover" alt="Game Cover">
+          <div class="card-body">
+              <h5 class="card-title">{{title2}}</h5>
+              <h6 class="card-text" text-align="left">{{year2}}. {{console2}}.</h6>
+          </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

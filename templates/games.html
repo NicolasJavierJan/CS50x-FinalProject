@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}: Games{% endblock %}
+
+{%block main%}
+    <form action="/games" method="post">
+      <div class="form-group">
+        <center>
+            <select class="form-control" id="console" name="console">
+            <option disabled selected>Console</option>
+            {% for row in console %}
+            <option> {{row['console']}}</option>
+            {% endfor %}
+            </select>
+            <select class="form-control" id="year" name="year">
+            <option disabled selected>Year</option>
+            {% for row in year %}
+            <option> {{row['year']}}</option>
+            {% endfor %}
+            </select>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-outline-dark">Search!</button>
+        </center>
+            <br>
+            <br>
+            <table width="100%" align="center">
+              <tr>
+                <th>Console</th>
+                <th>Year</th>
+                <th>Game</th>
+              </tr>
+              {%for row in rows%}
+              <tr>
+                <td>{{row['console']}}</td>
+                <td>{{row['year']}}</td>
+                <td><a href="/game/{{row['id']}}">{{row['game']}}</td></a>
+              </tr>
+              {%endfor%}
+            </table>
+         </div>
+    </form>
+{%endblock%}

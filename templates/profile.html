@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}: {{username}}'s Profile{% endblock %}
+
+{%block main%}
+<h3 style="text-align:center;">{{username}}'s favourite game is {{favourite}}.</h3>
+<br>
+<img src="/static/img/{{number}}.jpg" class="img-thumbnail rounded mx-auto d-block" id="gamecover">
+<br>
+<br>
+<form action="/profile" method="post">
+      <div class="form-group">
+        <center>
+            <select class="form-control" id="game" name="game">
+            <option disabled selected>Choose a favourite game!</option>
+            {% for row in game %}
+            <option> {{row['game']}}</option>
+            {% endfor %}
+            </select>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-outline-dark">This one!</button>
+        </center>
+      </div>
+</form>
+{%endblock%}

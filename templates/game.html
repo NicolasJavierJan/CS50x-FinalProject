@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}: {{name}}{% endblock %}
+
+{%block main%}
+<h1 style="text-align:center;"> {{name}} </h1>
+<h3 style="text-align:center;"> {{subtitle}} </h3>
+<br>
+<img src="/static/img/{{number}}.jpg" class="img-thumbnail rounded float-left" id="gamecover">
+
+<p> {{review}} </p>
+
+<h6 style="text-align:center;">Games like {{name}}
+  <div class="d-flex">
+    <ol class="list-inline mx-auto justify-content-center" type="1">
+        {% for row in votes %}
+        <li><a href="/game/{{row['id']}}">{{row['game']}}</li></a>
+        {%endfor %}
+    </ol>
+  </div>
+</h6>
+
+{%endblock%}

@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}: Home{% endblock %}
+
+{%block main%}
+
+  <div class="media jumbotron bg-dark text-white">
+    <img src="/static/img/Mario.jpg" width="100px" class="mr-3 rounded-circle" alt="Mario">
+    <div class="media-body">
+      <h5 class="mt-0">Lorem Ipsum</h5>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed risus pretium quam vulputate dignissim suspendisse in. Quam pellentesque nec nam aliquam.
+    <br>
+    <br>
+    <form action="/" method="post">
+      <button type="submit" class="btn btn-outline-light float-right" name="article" value="Mario">Lorem</button>
+    </form>
+    </div>
+  </div>
+  <div class="media jumbotron bg-dark text-white">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Netus et malesuada</h5>
+        Morbi quis commodo odio aenean sed. Eget gravida cum sociis natoque penatibus et. Nibh tortor id aliquet lectus. Amet nisl suscipit adipiscing bibendum est ultricies.
+    <br>
+    <br>
+    <form action="/" method="post">
+      <button type="submit" class="btn btn-outline-light float-left" name="article" value="Yoshi">Morbi</button>
+    </form>
+    </div>
+    <img src="/static/img/Yoshi.jpg" width="100px"class="ml-3 rounded-circle" alt="Yoshi">
+  </div>
+  <div class="media jumbotron bg-dark text-white">
+    <img src="/static/img/Pikachu.jpg" width="100px" class="mr-3 rounded-circle" alt="Pikachu">
+      <div class="media-body">
+        <h5 class="mt-0">Fringilla ut morbi</h5>
+          Ultrices eros in cursus turpis massa tincidunt. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Vitae suscipit tellus mauris a diam maecenas. Libero justo laoreet sit amet cursus.
+    <br>
+    <br>
+    <form action="/" method="post">
+      <button type="submit" class="btn btn-outline-light float-right" name="article" value="Pikachu">Fringilla</button>
+    </form>
+      </div>
+  </div>
+  <div class="media jumbotron bg-dark text-white">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Dolor magna eget</h5>
+      Lectus proin nibh nisl condimentum. Consectetur adipiscing elit ut aliquam purus sit amet luctus. Morbi blandit cursus risus at ultrices.
+    <br>
+    <br>
+    <form action="/" method="post">
+      <button type="submit" class="btn btn-outline-light float-left" name="article" value="Inkling">Dolor</button>
+    </form>
+    </div>
+    <img src="/static/img/Inkling.jpg" width="100px" class="ml-3 rounded-circle" alt="Inkling">
+  </div>
+{%endblock%}

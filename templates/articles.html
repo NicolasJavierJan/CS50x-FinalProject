@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block title %}: Articles{% endblock %}
+
+{%block main%}
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card mt-4 mx-auto bg-dark text-white" style="width: 25rem;">
+      <img src="/static/img/Mario.jpg" class="card-img-top rounded-circle" id="articles" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Lorem ipsum</h5>
+          <p class="card-text">Morbi non arcu risus quis varius quam quisque. Elit ullamcorper dignissim cras tincidunt lobortis. Volutpat maecenas volutpat blandit aliquam etiam erat. Aliquam malesuada bibendum arcu vitae. Ornare arcu odio ut sem. Augue neque gravida in fermentum et.</p>
+          <form action="/articles" method="post" style="text-align: center;">
+            <button type="submit" class="btn btn-outline-light" name="article" value="Mario">Lorem</button>
+          </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card mt-4 mx-auto bg-dark text-white" style="width: 25rem;">
+      <img src="/static/img/Yoshi.jpg" class="card-img-top rounded-circle" id="articles" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Aliquam purus</h5>
+        <p class="card-text">Massa tempor nec feugiat nisl pretium fusce id. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Ac ut consequat semper viverra. Lectus mauris ultrices eros in cursus turpis massa tincidunt. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at.</p>
+        <form action="/" method="post" style="text-align: center;">
+          <button type="submit" class="btn btn-outline-light" name="article" value="Yoshi">Aliquam</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card mt-4 mx-auto bg-dark text-white" style="width: 25rem;">
+      <img src="/static/img/Pikachu.jpg" class="card-img-top rounded-circle" id="articles" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Vitae elementum</h5>
+        <p class="card-text">Hendrerit gravida rutrum quisque non tellus orci ac auctor. Vitae congue mauris rhoncus aenean vel elit. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Sit amet commodo nulla facilisi nullam vehicula ipsum.</p>
+        <form action="/" method="post" style="text-align: center;">
+          <button type="submit" class="btn btn-outline-light" name="article" value="Pikachu">Vitae</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card mt-4 mx-auto bg-dark text-white" style="width: 25rem;">
+      <img src="/static/img/Inkling.jpg" class="card-img-top rounded-circle" id="articles" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Elit at imperdiet</h5>
+        <p class="card-text">eugiat in ante metus dictum at tempor commodo ullamcorper a. Id volutpat lacus laoreet non curabitur gravida. Nec ultrices dui sapien eget mi. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. </p>
+        <form action="/" method="post" style="text-align: center;">
+          <button type="submit" class="btn btn-outline-light" name="article" value="Inkling">Elit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{%endblock%}
